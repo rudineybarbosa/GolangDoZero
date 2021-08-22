@@ -2,7 +2,7 @@ package auxiliar
 
 import "fmt"
 
-//"Comentario obrigatorio para funções públicas"
+//"Comentario obrigatorio para funções públicas (com letras maiúscula)"
 func Escrever() {
 	fmt.Println("Escrevendo do pacote auxiliar função Escrever")
 
