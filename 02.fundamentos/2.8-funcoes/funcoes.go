@@ -7,6 +7,7 @@ func somar(n1 int8, n2 int8) int8 {
 }
 
 //GO permite funcao com mais de um retorno
+//funções com nome iniciando com letra minúscula são funções privadas(não exportadas para fora do pacote)
 func calculosMatematicos(n1, n2 int8) (int8, int8) {
 	soma := n1 + n2
 	subtracao := n1 - n2
