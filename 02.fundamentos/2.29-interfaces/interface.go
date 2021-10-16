@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"math"
+	"reflect"
 )
 
 type forma interface {
@@ -29,13 +30,29 @@ func (c circulo) area() float64 {
 	return math.Pi * math.Pow(c.raio, 2)
 }
 
+func calcularArea(f forma) {
+
+	if reflect.TypeOf(f).Name() == "circulo" {
+		fmt.Println("Area Círculo: ", f.area())
+
+	} else {
+		fmt.Println("Area Retângulo: ", f.area())
+
+	}
+
+}
+
 func main() {
 	c := circulo{raio: 10}
 	r := retangulo{10, 15}
 
 	areaCirculo := c.area()
 	areaRetangulo := r.area()
-
 	fmt.Println("Area Circulo: ", areaCirculo)
 	fmt.Println("Area Retangulo: ", areaRetangulo)
+
+	//UTILIZANDO FUNÇÃO QUE RECEBE TIPO GENÉRICO
+	calcularArea(c)
+	calcularArea(r)
+
 }
