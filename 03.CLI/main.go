@@ -28,6 +28,7 @@ func main() {
 	//Fazer o build da aplicação para gerar o executável
 	//-> go build
 	////este comando criará um executável com o mesmo nome do módulo, definido em go.mod: linha-de-comando
-	//Executar
+	//Executar o aplicação
+	//-> ./linha-de-comando ip --host pismo.io
 
 }
