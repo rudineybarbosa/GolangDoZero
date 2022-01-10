@@ -26,7 +26,7 @@ func main() {
 	fmt.Println(usuario["sobrenome"])
 
 	catalogo := map[string]endereco{
-		"luzinete": endereco{"rua teles de menezes", 231, "jardim silvina", "SBC", "São Paulo"},
+		"luzinete": {"rua teles de menezes", 231, "jardim silvina", "SBC", "São Paulo"},
 		"rudiney":  endereco{"rua dois de julho", 251, "santo amaro", "Recife", ""},
 	}
 	fmt.Println(catalogo)

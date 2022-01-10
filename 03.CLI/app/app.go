@@ -50,6 +50,7 @@ func buscarIps(c *cli.Context) {
 	if erro != nil {
 		log.Fatal("Erro:", erro)
 	}
+
 	for _, ip := range ips {
 		fmt.Println(ip)
 

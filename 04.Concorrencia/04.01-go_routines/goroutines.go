@@ -7,7 +7,7 @@ import (
 
 func main() {
 
-	go escrever("Rotina 01")
+	go escrever("Rotina 01") //inicia a execução da rotina 1, e uma outra thread segue para próxima linha
 	escrever("Rotina 02")
 }
 
